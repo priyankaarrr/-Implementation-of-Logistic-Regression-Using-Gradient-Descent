@@ -16,10 +16,10 @@ To write a program to implement the the Logistic Regression Using Gradient Desce
 ## Program:
 Developed by: priyanka R
 RegisterNumber: 2122232200814
-
+```
 import pandas as pd
 import numpy as np
-
+```
 dataset=pd.read_csv('Placement_Data.csv')
 dataset
 
