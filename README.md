@@ -18,8 +18,10 @@ To write a program to implement the the Logistic Regression Using Gradient Desce
 Developed by: priyanka R
 RegisterNumber: 2122232200814
 ~~~
+~~~
 import pandas as pd
 import numpy as np
+~~~
 ~~~
 dataset=pd.read_csv('Placement_Data.csv')
 dataset
@@ -27,10 +29,11 @@ dataset
 
 ## output
 ![image](https://github.com/user-attachments/assets/14fe8da7-f734-4010-b6db-7df0f6fd9667)
-
+~~~
 dataset=dataset.drop('sl_no',axis=1)
 dataset=dataset.drop('salary',axis=1)
-
+~~~
+~~~
 dataset["gender"]=dataset["gender"].astype('category')
 dataset["ssc_b"]=dataset["ssc_b"].astype('category')
 dataset["hsc_b"]=dataset["hsc_b"].astype('category')
@@ -40,10 +43,10 @@ dataset["specialisation"]=dataset["specialisation"].astype('category')
 dataset["status"]=dataset["status"].astype('category') 
 dataset["hsc_s"]=dataset["hsc_s"].astype('category')
 dataset.dtypes
-
+~~~
 ## output
 ![image](https://github.com/user-attachments/assets/bc099560-2d52-4d7e-86c5-29d37a900c0c)
-
+~~~
 dataset["gender"]=dataset["gender"].cat.codes
 dataset["ssc_b"]=dataset["ssc_b"].cat.codes
 dataset["hsc_b"]=dataset["hsc_b"].cat.codes
@@ -53,17 +56,17 @@ dataset["specialisation"]=dataset["specialisation"].cat.codes
 dataset["status"]=dataset["status"].cat.codes
 dataset["hsc_s"]=dataset["hsc_s"].cat.codes
 dataset
-
+~~~
 ## output
 ![image](https://github.com/user-attachments/assets/9f04c437-48a8-4f28-a458-b6bc55d35a0b)
-
+~~~
 X=dataset.iloc[:, :-1].values
 Y=dataset.iloc[:, -1].values
 Y
-
+~~~
 ## output
 ![image](https://github.com/user-attachments/assets/7cbf7698-24b7-4afa-b2aa-a7779ac76cf0)
-
+~~~
 theta = np.random.randn(X.shape[1])
 y=Y
 def sigmoid(z):
@@ -86,7 +89,7 @@ def predict(theta,X):
 y_pred = predict(theta,X)
 accuracy = np.mean(y_pred.flatten()==y)
 print("Accuracy:",accuracy)
-
+~~~
 
 ## output
 ![image](https://github.com/user-attachments/assets/1d06f632-8e8b-4c1e-985b-dc3e41ae57ff)
@@ -102,18 +105,19 @@ print(Y)
 ## output
 ![image](https://github.com/user-attachments/assets/ba840607-2514-495d-b482-11cf069b3b94)
 
-
+~~~
 xnew= np.array([[0,87,0,95,0,2,78,2,0,0,1,0]])
 y_prednew=predict(theta,xnew)
 print(y_prednew)
-
+~~~
 ## output
 ![image](https://github.com/user-attachments/assets/90208d87-ffbd-4b08-b3f8-f92bc631faf9)
 
-
+~~~
 xnew= np.array([[0,0,0,0,0,2,8,2,0,0,1,0]])
 y_prednew=predict(theta,xnew)
 print(y_prednew)
+~~~
 
 ## output 
 ![image](https://github.com/user-attachments/assets/6e848eb9-48d0-49de-9277-380eacad1af7)
