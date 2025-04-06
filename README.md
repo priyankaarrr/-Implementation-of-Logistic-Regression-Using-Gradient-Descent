@@ -94,14 +94,15 @@ print("Accuracy:",accuracy)
 ## output
 ![image](https://github.com/user-attachments/assets/1d06f632-8e8b-4c1e-985b-dc3e41ae57ff)
 
-
+~~~
 print(y_pred)
+~~~
 
 ## output
 ![image](https://github.com/user-attachments/assets/52af4254-f097-4608-bed2-2aff5820279a)
-
+~~~
 print(Y)
-
+~~~
 ## output
 ![image](https://github.com/user-attachments/assets/ba840607-2514-495d-b482-11cf069b3b94)
 
