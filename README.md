@@ -14,14 +14,16 @@ To write a program to implement the the Logistic Regression Using Gradient Desce
 4. 
 
 ## Program:
+~~~
 Developed by: priyanka R
 RegisterNumber: 2122232200814
-```
+~~~
 import pandas as pd
 import numpy as np
-```
+~~~
 dataset=pd.read_csv('Placement_Data.csv')
 dataset
+~~~
 
 ## output
 ![image](https://github.com/user-attachments/assets/14fe8da7-f734-4010-b6db-7df0f6fd9667)
@@ -95,18 +97,28 @@ print(y_pred)
 ## output
 ![image](https://github.com/user-attachments/assets/52af4254-f097-4608-bed2-2aff5820279a)
 
+print(Y)
+
+## output
+![image](https://github.com/user-attachments/assets/ba840607-2514-495d-b482-11cf069b3b94)
 
 
+xnew= np.array([[0,87,0,95,0,2,78,2,0,0,1,0]])
+y_prednew=predict(theta,xnew)
+print(y_prednew)
+
+## output
+![image](https://github.com/user-attachments/assets/90208d87-ffbd-4b08-b3f8-f92bc631faf9)
 
 
+xnew= np.array([[0,0,0,0,0,2,8,2,0,0,1,0]])
+y_prednew=predict(theta,xnew)
+print(y_prednew)
 
+## output 
+![image](https://github.com/user-attachments/assets/6e848eb9-48d0-49de-9277-380eacad1af7)
 
-
-
-## Output:
-![logistic regression using gradient descent](sam.png)
 
 
 ## Result:
 Thus the program to implement the the Logistic Regression Using Gradient Descent is written and verified using python programming.
-
